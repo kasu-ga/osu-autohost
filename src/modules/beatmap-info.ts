@@ -26,21 +26,35 @@ export function BeatmapInfo({
     game.on("beatmap", async (beatmap) => {
       if (minLength && beatmap.totalLength < minLength) {
         await setLastBeatmap();
+        await game.message(
+          `The selected map must be longer than ${formatSeconds(minLength)}`
+        );
         return;
       }
 
       if (maxLength && beatmap.totalLength > maxLength) {
         await setLastBeatmap();
+        await game.message(
+          `The selected map should not be longer than ${formatSeconds(
+            maxLength
+          )}`
+        );
         return;
       }
 
       if (mindiff && beatmap.stars < mindiff) {
         await setLastBeatmap();
+        await game.message(
+          `The difficulty of the selected map must not be less than ${mindiff}`
+        );
         return;
       }
 
       if (maxdiff && beatmap.stars > maxdiff) {
         await setLastBeatmap();
+        await game.message(
+          `The difficulty of the selected map must not be higher than ${maxdiff}`
+        );
         return;
       }
 

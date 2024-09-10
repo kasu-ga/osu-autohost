@@ -9,6 +9,6 @@ export * from "./lib/score-to-string";
 export * from "./lib/sort-scores";
 export * from "./modules/administration";
 export * from "./modules/autohost-rotate";
-export * from "./modules/user-commands";
+export * from "./modules/user-stats";
 export * from "./modules/user-playtime";
 export * from "./modules/beatmap-info";

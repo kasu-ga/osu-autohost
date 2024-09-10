@@ -12,7 +12,7 @@ With Osu Autohost you can create a room and add different modules that will prov
 npm install osu-autohost
 ```
 
-## Quick Start
+## Example
 
 ```ts
 import { BanchoClient } from "bancho.js";
@@ -21,7 +21,7 @@ import {
   createDatabase,
   Administration,
   UserPlayTime,
-  UserCommands,
+  UserStats,
   AutohostRotate,
   BeatmapInfo,
 } from "osu-autohost";
@@ -44,7 +44,7 @@ async function main() {
   testGame.set(
     Administration,
     UserPlayTime,
-    UserCommands,
+    UserStats,
     AutohostRotate,
     BeatmapInfo({
       mindiff: 0,
@@ -59,7 +59,7 @@ async function main() {
 main();
 ```
 
-## Modules
+## Features
 
 - Administration: Moderation and administration commands.
 - Autohost Rotate: Automatic Rotating Autohost System, along with related commands.

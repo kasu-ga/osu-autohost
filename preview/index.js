@@ -5,7 +5,7 @@ const {
   createDatabase,
   Administration,
   UserPlayTime,
-  UserCommands,
+  UserStats,
   AutohostRotate,
   BeatmapInfo,
 } = require("../dist");
@@ -28,7 +28,7 @@ async function main() {
   testGame.set(
     Administration,
     UserPlayTime,
-    UserCommands,
+    UserStats,
     AutohostRotate,
     BeatmapInfo({
       mindiff: 0,

@@ -14,7 +14,7 @@ import {
 } from "../lib/average-score";
 import { sortScores } from "../lib/sort-scores";
 
-export function UserCommands(game: Game) {
+export function UserStats(game: Game) {
   game.on("finished", async () => {
     const multi = await game.context.client.osuApi.multi.getMatch(
       game.lobby.id

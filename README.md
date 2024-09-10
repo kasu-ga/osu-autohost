@@ -4,7 +4,15 @@
 
 Osu Autohost is a minimalist and easy-to-use module that allows you to add different functionalities to multiplayer rooms created with [Bancho.js](https://bancho.js.org/).
 
-With Osu Autohost you can create a room and add different modules that will provide specific functionality and commands for that [module](#modules).
+With Osu Autohost you can create a room and add different modules that will provide specific functionality and commands for that feature.
+
+## Features
+
+- Administration: Moderation and administration commands.
+- Autohost Rotate: Automatic Rotating Autohost System, along with related commands.
+- Beatmap Info: Show information about a beatmap when it is selected and add difficulty and duration validation.
+- User Commands: Add user statistics and their scores in the different matches.
+- User Playtime: Counts the total and current time that the user has been connected to the lobby.
 
 ## Installation
 
@@ -58,11 +66,3 @@ async function main() {
 
 main();
 ```
-
-## Features
-
-- Administration: Moderation and administration commands.
-- Autohost Rotate: Automatic Rotating Autohost System, along with related commands.
-- Beatmap Info: Show information about a beatmap when it is selected and add difficulty and duration validation.
-- User Commands: Add user statistics and their scores in the different matches.
-- User Playtime: Counts the total and current time that the user has been connected to the lobby.
